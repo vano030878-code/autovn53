@@ -1,0 +1,1317 @@
+/* ===== СБРОС СТИЛЕЙ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1870px;
+    margin: 0px 0 0 10px;
+    padding: 0 40px;
+}
+
+/* ===== ШАПКА ===== */
+.main-header {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding-top: 20px;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* Левая часть - в левом углу */
+.header-left {
+    flex: 0 0 auto;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    font-size: 0.95rem;
+    color: #ff0000;
+    font-weight: 500;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Правая часть - отодвинута к правому краю */
+.header-right {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 0px;
+    margin-left: auto;
+}
+
+/* Общие стили для инфоблоков */
+.info-block {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 220px;
+}
+
+.block-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ff0000;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 6px;
+}
+
+/* Блок часов работы */
+.work-block {
+    border-left: 3px solid #ff0000;
+}
+
+.work-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.work-day {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    line-height: 1.3;
+}
+
+.work-day .day {
+    color: #adb5bd;
+}
+
+.work-day .time {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ===== БЕГУЩАЯ ЛЕНТА (УБРАНА) ===== */
+
+/* ===== ГЛАВНАЯ ОБЛОЖКА (HERO SECTION) ===== */
+.hero-section {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+    padding-top: 100px;
+    text-align: left;
+    margin-right: 0;
+}
+
+.hero-title {
+    font-size: 3.0rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-title .highlight {
+    color: #1a5c9c;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 8px 25px;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 3.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+/* ===== КНОПКИ В ГЛАВНОЙ СЕКЦИИ ===== */
+.hero-actions {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 220px;
+}
+
+.btn-primary {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #cc0000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+/* ===== ОСОБЕННОСТИ В ГЛАВНОЙ СЕКЦИИ ===== */
+.hero-features {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 12px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+/* ===== СЛАЙДЕР (GALLERY SECTION) ===== */
+.gallery-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+/* ИСПРАВЛЕНИЕ: выравнивание заголовка "Наш магазин и склад" по центру */
+.gallery-section .section-title {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+/* Контейнер слайдера */
+.slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+/* Слайд */
+.slide {
+    display: none;
+    align-items: center;
+    background: #fff;
+    min-height: 500px;
+}
+
+.slide.active {
+    display: flex;
+}
+
+/* Изображение слайда */
+.slide-image {
+    flex: 1;
+    min-width: 50%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+/* Контент слайда */
+.slide-content {
+    flex: 1;
+    min-width: 50%;
+    padding: 40px;
+    background: #f8f9fa;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+}
+
+.slide-title {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.slide-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.slide-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.slide-list li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+.slide-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* ТОЧКИ-ИНДИКАТОРЫ СЛАЙДЕРА */
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.dot.active {
+    background-color: #ff0000;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+/* Поясняющий текст под слайдером */
+.gallery-note {
+    max-width: 800px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(26, 92, 156, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid #1a5c9c;
+}
+
+.gallery-note p {
+    font-size: 1.2rem;
+    color: #1a1a2e;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ===== БЛОК "О НАС" (ABOUT SECTION) ===== */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(26, 26, 46, 0.2), transparent);
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+/* Контентная часть блока "О нас" */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: stretch;
+}
+
+/* Левая часть - текст */
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #1a5c9c;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content strong {
+    color: #1a1a2e;
+    font-weight: 700;
+}
+
+.highlight-text {
+    color: #ff0000;
+    font-weight: 700;
+    background-color: rgba(255, 0, 0, 0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.call-to-action {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(26, 92, 156, 0.08);
+    border-radius: 8px;
+    border-left: 4px solid #1a5c9c;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    color: #1a5c9c;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* ===== ФУТЕР ===== */
+.main-footer {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 60px 0 30px;
+    border-top: 3px solid #1a5c9c;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Левая колонка - карта */
+.footer-map {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-map iframe {
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Правая колонка - контакты */
+.footer-contacts {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Карточки как в шапке */
+.footer-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-card {
+    border-left: 4px solid #1a5c9c;
+}
+
+.hours-card {
+    border-left: 4px solid #ff0000;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Контактная информация */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 10px;
+    line-height: 1.4;
+}
+
+.contact-label {
+    font-weight: 600;
+    color: #adb5bd;
+    min-width: 80px;
+    flex-shrink: 0;
+}
+
+.contact-value {
+    color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+    color: #ff0000;
+}
+
+.footer-link.email {
+    color: #adb5bd;
+    font-weight: normal;
+}
+
+/* Часы работы */
+.hours-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hours-item:last-child {
+    border-bottom: none;
+}
+
+.hours-item .day {
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+.hours-item .time {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Примечание в футере */
+.footer-note {
+    background-color: rgba(26, 92, 156, 0.2);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 3px solid #1a5c9c;
+    font-size: 0.95rem;
+    color: #adb5bd;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ===== */
+.text {
+    color: black;
+    text-decoration: none;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+/* Для планшетов и маленьких ноутбуков */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-title .highlight {
+        font-size: 3rem;
+    }
+}
+
+/* Для планшетов */
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .header-left {
+        text-align: center;
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .header-right {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    
+    .hero-content {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title .highlight {
+        font-size: 2.7rem;
+        padding: 6px 20px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        min-width: 200px;
+        padding: 16px 30px;
+    }
+    
+    /* Слайдер на планшетах */
+    .slide {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .slide-image,
+    .slide-content {
+        min-width: 100%;
+    }
+    
+    .slide-image img,
+    .slide-content {
+        height: 400px;
+    }
+    
+    .slide-content {
+        padding: 30px;
+    }
+    
+    /* Блок "О нас" на планшетах */
+    .about-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+    
+    .about-content {
+        gap: 40px;
+    }
+    
+    .text-card {
+        padding: 30px;
+    }
+    
+    .about-subtitle {
+        font-size: 1.6rem;
+    }
+    
+    /* Футер на планшетах */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-map,
+    .footer-contacts {
+        min-width: 100%;
+    }
+    
+    .footer-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Для мобильных устройств (основные исправления) */
+@media (max-width: 768px) {
+    /* ШАПКА: добавим отступ снизу, чтобы не прилипала к обложке */
+    .main-header {
+        padding-bottom: 15px;
+    }
+    
+    .site-title {
+        font-size: 1.7rem;
+    }
+    
+    .brand-tagline {
+        font-size: 0.95rem;
+    }
+    
+    .header-right {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .info-block {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    /* Главная секция - исправления для мобильных */
+    .hero-section {
+        min-height: 500px;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .hero-content {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .hero-title {
+        font-size: 2.0rem;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+    .hero-title .highlight {
+        font-size: 2.0rem;
+        padding: 5px 15px;
+        margin: 5px 0;
+        line-height: 1.3;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.0rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    
+    /* Кнопки на мобильных */
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        min-width: 0;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+    
+    /* Скрываем особенности на мобильных */
+    .hero-features {
+        display: none;
+    }
+    
+    /* Слайдер на мобильных */
+    .gallery-section {
+        padding: 60px 0;
+    }
+    
+    .slide-title {
+        font-size: 1.5rem;
+    }
+    
+    .slide-text {
+        font-size: 1rem;
+    }
+    
+    .slide-image img,
+    .slide-content {
+        height: 350px;
+    }
+    
+    .slide-content {
+        padding: 25px;
+        padding-bottom: 60px; /* Увеличиваем отступ снизу для точек */
+    }
+    
+    /* ВАЖНО: РАМКА ДЛЯ ТОЧЕК ТОЛЬКО НА МОБИЛЬНЫХ */
+    .slider-dots {
+        bottom: 20px; /* Опускаем точки еще ниже */
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .dot {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .dot.active {
+        transform: scale(1.3);
+        box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+    }
+    
+    .gallery-note p {
+        font-size: 1.1rem;
+    }
+    
+    /* Блок "О нас" на мобильных */
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        min-width: 100%;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .text-card {
+        padding: 25px;
+    }
+    
+    .about-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .text-content p {
+        font-size: 1rem;
+    }
+    
+    .call-to-action p {
+        font-size: 1.1rem;
+    }
+    
+    /* Футер на мобильных */
+    .main-footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-title {
+        font-size: 1.8rem;
+    }
+    
+    .footer-card {
+        padding: 20px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .contact-label {
+        min-width: auto;
+    }
+    
+    .hours-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .footer-bottom {
+        padding-top: 20px;
+    }
+    
+    /* Исправления контейнера для мобильных */
+    .container {
+        padding: 0 15px !important;
+        margin: 0 auto !important;
+        max-width: 100vw !important;
+    }
+    
+    .hero-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+/* Для очень маленьких мобильных устройств (до 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px !important;
+        margin: 0 auto !important;
+    }
+    
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    .info-block {
+        padding: 7px;
+    }
+    
+    /* Главная секция на очень маленьких экранах */
+    .hero-section {
+        min-height: 450px;
+    }
+    
+    .hero-content {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .hero-title {
+        font-size: 1.7rem;
+    }
+    
+    .hero-title .highlight {
+        font-size: 1.7rem;
+        padding: 4px 12px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .hero-actions {
+        padding: 0 5px;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+    
+    .btn {
+        padding: 12px 18px;
+        font-size: 0.95rem;
+        max-width: 250px;
+    }
+    
+    /* Слайдер на очень маленьких экранах */
+    .slide-image img,
+    .slide-content {
+        height: 300px;
+    }
+    
+    .slide-content {
+        padding: 20px;
+        padding-bottom: 50px; /* Увеличиваем отступ снизу для точек */
+    }
+    
+    /* Улучшенная рамка для точек на очень маленьких экранах */
+    .slider-dots {
+        bottom: 15px; /* Еще ниже для маленьких экранов */
+        padding: 6px 14px;
+        border-width: 1.5px;
+    }
+    
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .gallery-note {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    /* Блок "О нас" на очень маленьких экранах */
+    .about-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .text-card {
+        padding: 20px;
+    }
+    
+    .about-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .call-to-action {
+        padding: 15px;
+    }
+    
+    /* Футер на очень маленьких экранах */
+    .footer-title {
+        font-size: 1.6rem;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .footer-card {
+        padding: 18px;
+    }
+    
+    .footer-note {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Для iPhone SE и очень узких экранов */
+@media (max-width: 375px) {
+    /* Шапка для iPhone SE */
+    .main-header {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .site-title {
+        font-size: 1.3rem;
+        line-height: 1.1;
+    }
+    
+    .brand-tagline {
+        font-size: 0.85rem;
+        margin-top: 5px;
+    }
+    
+    .header-right {
+        margin-top: 10px;
+        gap: 12px;
+    }
+    
+    .info-block {
+        padding: 8px 10px;
+        min-width: auto;
+    }
+    
+    .block-title {
+        font-size: 0.8rem;
+    }
+    
+    .work-day {
+        font-size: 0.85rem;
+    }
+    
+    /* Главная секция для iPhone SE */
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-content {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+        line-height: 1.15;
+    }
+    
+    .hero-title .highlight {
+        font-size: 1.4rem;
+        padding: 3px 10px;
+        margin: 5px 0;
+        line-height: 1.2;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 95%;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+    
+    /* Кнопки для iPhone SE */
+    .hero-actions {
+        gap: 10px;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        max-width: 100%;
+        min-height: 44px;
+    }
+    
+    /* Контейнер для iPhone SE */
+    .container {
+        padding: 0 8px !important;
+    }
+    
+    /* Слайдер для iPhone SE */
+    .slide-image img,
+    .slide-content {
+        height: 280px;
+    }
+    
+    .slide-content {
+        padding: 15px;
+        padding-bottom: 45px; /* Увеличиваем отступ снизу для точек */
+    }
+    
+    /* Рамка для точек на iPhone SE */
+    .slider-dots {
+        bottom: 12px; /* Еще ниже для iPhone SE */
+        padding: 5px 12px;
+        border-width: 1px;
+    }
+    
+    .dot {
+        width: 11px;
+        height: 11px;
+    }
+    
+    /* Заголовки для iPhone SE */
+    .section-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    /* Блок "О нас" для iPhone SE */
+    .about-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .text-content p {
+        font-size: 0.9rem;
+    }
+    
+    /* Футер для iPhone SE */
+    .footer-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* Сверхмаленькие экраны (до 320px) */
+@media (max-width: 320px) {
+    .hero-section {
+        min-height: 380px;
+    }
+    
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    
+    .hero-title .highlight {
+        font-size: 1.3rem;
+        padding: 3px 8px;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        padding: 9px 14px;
+        font-size: 0.85rem;
+    }
+    
+    .site-title {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    /* Еще меньше рамка для точек на очень маленьких экранах */
+    .slide-content {
+        padding-bottom: 40px; /* Увеличиваем отступ снизу для точек */
+    }
+    
+    .slider-dots {
+        bottom: 10px; /* Самый низ для маленьких экранов */
+        padding: 4px 10px;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Для пользователей с уменьшенным движением */
+@media (prefers-reduced-motion: reduce) {
+    .ribbon-content {
+        animation: none;
+        justify-content: center;
+    }
+}
