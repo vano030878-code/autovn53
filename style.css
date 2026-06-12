@@ -1,0 +1,287 @@
+/* ==========================================
+   1. БАЗОВЫЕ СТИЛИ СТРАНИЦЫ
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: #0b132b;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+h1, h2, h3, .box-title, .btn-heavy, .brands-row, .map-title {
+    font-family: 'Trebuchet MS', 'Arial Black', Gadget, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* ==========================================
+   2. ШАПКА САЙТА И РАСПИСАНИЕ
+   ========================================== */
+.main-header {
+    background: #0b132b;
+    color: #ffffff;
+    padding: 25px 0;
+    border-bottom: 6px solid #ff0000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-title {
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.brand-tagline {
+    font-size: 13px;
+    color: #6ba4ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.work-block {
+    border: 3px solid #ffffff;
+    padding: 15px 25px;
+}
+
+.block-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+.work-hours {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.work-day {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 6px;
+}
+
+.red-text-only {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* ==========================================
+   3. ГЛАВНЫЙ БАННЕР С КНОПКАМИ
+   ========================================== */
+.hero-banner {
+    position: relative;
+    background-image: url('photo/photo_2025-12-12_15-59-56.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(11, 19, 43, 0.75);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.main-headline {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ИСПРАВЛЕНО: Кнопка «Позвонить» стала строго красной */
+.btn-banner-secondary {
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.btn-banner-secondary:hover {
+    background: #ffffff;
+    color: #0b132b;
+}
+
+/* ==========================================
+   4. СТРОКА ОТЕЧЕСТВЕННЫХ БРЕНДОВ
+   ========================================== */
+.brands-section {
+    background: #f4f7ff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 0;
+}
+
+.brands-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: #0b132b;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   5. ЖЕСТКАЯ АЛЬТЕРНАТИВНАЯ СЕТКА ВЫРАВНИВАНИЯ
+   ========================================== */
+.content-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.text-top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 25px;
+    align-items: end;
+}
+
+.feature-box {
+    border-left: 6px solid #0b132b;
+    padding-left: 20px;
+}
+
+.feature-box h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #0b132b;
+}
+
+.feature-box p {
+    color: #4a4a4a;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.map-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: #0b132b;
+}
+
+.map-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.visual-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    height: 380px;
+    margin-bottom: 25px;
+}
+
+.warehouse-image-box {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 !important;
+}
+
+.map-wrapper {
+    background: #ffffff;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 !important;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    border-radius: 0 !important;
+    display: block;
+}
+
+.text-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* ==========================================
+   6. ПОДВАЛ САЙТА (ФУТЕР)
+   ========================================== */
+.main-footer {
+    background: #0b132b;
+    color: #ffffff;
+    padding: 40px 0;
+    border-top: 6px solid #ff0000;
+    font-size: 14px;
+}
+
+/* ИСПРАВЛЕНО: Текст внутри контейнера центрируется */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.footer-copy {
+    font-weight: bold;
+    opacity: 0.8;
+}

@@ -1,0 +1,130 @@
+/* ==========================================
+   1. ПЛАНШЕТЫ И СКЛАДНЫЕ ЭКРАНЫ В РАЗВЕРНУТОМ ВИДЕ
+   (iPad Pro, iPad Air, Surface Pro 7, Zenbook Fold, Galaxy Z Fold)
+   Ширина экрана от 769px до 1024px
+   ========================================== */
+@media (max-width: 1024px) {
+    .main-headline {
+        font-size: 42px; /* Чуть уменьшаем главный заголовок, чтобы не ломал строки */
+    }
+    .two-column-layout, .text-top-row, .text-bottom-row {
+        gap: 30px; /* Сужаем отступы между колонками, чтобы всё поместилось */
+    }
+    .visual-bottom-row {
+        height: 320px; /* Делаем графику чуть компактнее по высоте */
+    }
+}
+
+/* ==========================================
+   2.МАЛЕНЬКИЕ ПЛАНШЕТЫ, ЭКРАНЫ-КНИЖКИ И СМАРТФОНЫ В ОРИЕНТАЦИИ АЛЬБОМ
+   (iPad Mini, Surface Duo, Nest Hub, Nest Hub Max)
+   Ширина экрана от 481px до 768px
+   ========================================== */
+@media (max-width: 768px) {
+    /* Перестраиваем шапку: логотип сверху, расписание снизу */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .work-block {
+        width: 100%; /* Расписание растягивается на всю ширину */
+        padding: 12px 20px;
+    }
+    
+    /* Переводим сетку сайта из двух колонок в одну */
+    .text-top-row, .visual-bottom-row, .text-bottom-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* На смартфонах склад и карта встают друг под другом */
+    .visual-bottom-row {
+        height: auto; /* Сбрасываем общую жесткую высоту */
+    }
+    .warehouse-image-box, .map-wrapper {
+        height: 300px; /* Каждому элементу даем фиксированную высоту по 300px */
+    }
+    
+    .main-headline {
+        font-size: 34px;
+    }
+    .brands-row {
+        justify-content: center;
+        gap: 15px;
+        font-size: 16px;
+    }
+}
+
+/* ==========================================
+   3. ВСЕ СОВРЕМЕННЫЕ СМАРТФОНЫ (ВЕРТИКАЛЬНО)
+   (iPhone SE, iPhone XR, iPhone 12 Pro, iPhone 14 Pro Max, Pixel 7, Galaxy S8+/S20 Ultra, Galaxy A51/A71)
+   Ширина экрана до 480px
+   ========================================== */
+@media (max-width: 480px) {
+    .main-header {
+        padding: 15px 0;
+    }
+    .site-title {
+        font-size: 26px; /* Логотип не вылезает за границы экрана */
+    }
+    .brand-tagline {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+    .work-block {
+        padding: 10px 15px;
+    }
+    .work-hours {
+        font-size: 13px;
+    }
+    
+    /* Главный баннер */
+    .hero-banner {
+        padding: 60px 0; /* Уменьшаем внутренние поля, чтобы экономить место */
+    }
+    .main-headline {
+        font-size: 28px; /* Заголовок становится аккуратным и читаемым на мобильном */
+    }
+    .hero-subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .btn-banner-secondary {
+        width: 100%; /* Кнопка «Позвонить» растягивается на весь экран мобильного под палец */
+        padding: 14px;
+        font-size: 15px;
+    }
+    
+    /* Строка брендов */
+    .brands-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Бренды выстраиваются в аккуратную сетку 3 на 2 */
+        gap: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* Контентная зона */
+    .content-section {
+        padding: 40px 0;
+    }
+    .feature-box h3 {
+        font-size: 18px;
+    }
+    .feature-box p {
+        font-size: 14px;
+    }
+    .map-title {
+        font-size: 24px;
+    }
+    .warehouse-image-box, .map-wrapper {
+        height: 250px; /* На маленьких экранах (iPhone SE) делаем фото и карту чуть ниже, чтобы они не занимали весь дисплей */
+    }
+    
+    /* Подвал */
+    .main-footer {
+        padding: 25px 0;
+        font-size: 12px;
+    }
+}
